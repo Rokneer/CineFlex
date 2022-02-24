@@ -1,0 +1,22 @@
+div{
+    width:360px;
+    height:640px;
+    background:rgb(192, 38, 38);
+    overflow:auto;
+  }
+  
+  body{
+    font-family:sans-serif;
+    background:#4b4b4b;
+  }
+  div{
+    padding:10px;
+    margin:0 auto;
+  }
+
+  #rectangle{
+    width:360px;
+    height: 32px;
+    background:rgb(68, 68, 228);
+}
+ 
