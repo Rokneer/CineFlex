@@ -10,13 +10,59 @@ div{
     background:#4b4b4b;
   }
   div{
-    padding:10px;
+    padding:5px;
     margin:0 auto;
   }
 
-  #rectangle{
-    width:360px;
-    height: 32px;
-    background:rgb(68, 68, 228);
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkcyan;
 }
- 
+li{
+  float: left;
+}
+li a{
+  display: block;
+  text-align: center;
+  padding: 5px 6px;
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(5, 30, 112); 
+}
+.topnav{
+  overflow: hidden;
+}
+.topnav a{
+  float: right;
+  display: block;
+  color: rgb(116, 116, 116);
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  font-size:11px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.multi_center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#images{
+  text-align: center;
+}

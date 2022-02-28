@@ -6,12 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Editar Cuenta</title>
     </head>
-    <div id="rectangle">
-      <a href=""><img src="imgs/menu.png" style="width:28px;height:28"></a>
-      <a href=""><img src="imgs/logo_small_icon_only.png" style="width:28px;height:28"></a>
-      <a href=""><img src="imgs/lupa.png" style="width:28px;height:28"></a>
-      <a href=""><img src="imgs/usuario.png" style="width:28px;height:28"></a>
-    </div>
+    <ul>
+      <li><a href="side_panel.html"><img src="imgs/menu.png" style="width: 40px;height: 40px;"></a></li>
+      <li><a href="home.html"><img src="imgs/logo_small_icon_only.png" style="width:40px;height:40px"></a></li>
+      <li style="float:right"><a href="cuenta.html"><img src="imgs/usuario.png" style="width:40px;height:40px"></a></li>
+      <li style="float:right"><img src="imgs/lupa.png" style="width:40px;height:40px"></a></li>
+      <li class="topnav" style="float:right">
+        <input type="text"  placeholder="Buscar...">
+      </li>
+    </ul>
   <div>
     <body>
       <p style = "float: left;">
@@ -52,7 +55,7 @@
           <input type="password" id="confirmar" name="confirmar">
         </label>
         <br>
-        <input type="button" value="Confirmar">
+        <a href="cuenta.html"><input type="button" value="Confirmar"></a>
     </body>
   </div>
 </html> 
