@@ -6,24 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
     </head>
-    <ul>
-      <li><a href="side_panel.html"><img src="imgs/menu.png" style="width: 40px;height: 40px;"></a></li>
-      <li><a href="home.html"><img src="imgs/logo_small_icon_only.png" style="width:40px;height:40px"></a></li>
-      <li style="float:right"><a href="cuenta.html"><img src="imgs/usuario.png" style="width:40px;height:40px"></a></li>
-      <li style="float:right"><img src="imgs/lupa.png" style="width:40px;height:40px"></a></li>
-      <li class="topnav" style="float:right">
-        <input type="text"  placeholder="Buscar...">
-      </li>
-    </ul>
-    <div>
-        <body>
-          <a href="pelicula.html"><img src="imgs/3949103.jpg" style="width:360px;height:232"></a>
-            
-            <p id="images"><a href="estrenos.html"><img src="imgs/Estreno.png" alt="Estrenos" style="width: 128px;height: 128px;"></a>
-            <a href="cartelera.html"><img src="imgs/Cartelera.png" alt="Estrenos" style="width: 128px;height: 128px;"></a></p>
-            
-            <p id="images"><a href="proximos.html"><img src="imgs/Proximos.png" alt="Estrenos" style="width: 128px;height: 128px;"></a>
-            <a href="teatros.html"><img src="imgs/Teatros.png" alt="Estrenos" style="width: 128px;height: 128px;"></a></p>
-        </body>
-    </div>    
+    <section id="home">
+      <header>
+          <nav class="banner">
+              <div class="item_banner">
+                  <a href="side_panel.html"><img src="imgs/menu.png"></a>
+                  <a href="home.html"><img src="imgs/logo_small_icon_only.png"></a>
+                  <a><img src="imgs/lupa.png"></a>
+                  <a href="cuenta.html"><img src="imgs/usuario.png"></a>
+              </div>
+          </nav>
+      </header>
+      <section class="movie_scroll">
+          <a href="pelicula.html"><img src="imgs/Empanadas.jpg" alt="Scroll Peliculas"></a>
+      </section>
+      <section class="pelicula_categoria">
+          <div class="item_categoria">
+            <span>Estrenos</span>
+            <div class="contenedor_img_categoria_pelicula" id="item_1">
+              <a href="estrenos.html"><img src="imgs/Estreno.png" alt="Estrenos"></a>
+            </div>
+          </div>
+          <div class="item_categoria">
+            <span>Cartelera</span>
+            <div class="contenedor_img_categoria_pelicula" id="item_2">
+              <a href="cartelera.html"><img src="imgs/Cartelera.png" alt="Estrenos"></a>
+            </div>
+          </div>
+          <div class="item_categoria">
+            <span>Proximos</span>
+            <div class="contenedor_img_categoria_pelicula" id="item_3">
+              <a href="proximos.html"><img src="imgs/Proximos.png" alt="Estrenos"></a>
+            </div>
+          </div>
+          <div class="item_categoria">
+            <span>Teatros</span>
+            <div class="contenedor_img_categoria_pelicula" id="item_4">
+              <a href="teatros.html"><img src="imgs/Teatros.png" alt="Estrenos"></a>
+            </div>
+          </div>
+      </section>
+    </section>
 </html>
