@@ -1,18 +1,18 @@
-div{
-  width:360px;
-  height:640px;
-  background:rgb(155, 189, 181);
-  overflow:auto;
-}
-
-body{
-  font-family:sans-serif;
-  background:#4b4b4b;
-}
-div{
-  padding:5px;
-  margin:0 auto;
-}
+/*div{
+    width:360px;
+    height:640px;
+    background:rgb(155, 189, 181);
+    overflow:auto;
+  }
+  
+  body{
+    font-family:sans-serif;
+    background:#4b4b4b;
+  }
+  div{
+    padding:5px;
+    margin:0 auto;
+  }
 
 ul{
 list-style: none;
@@ -64,68 +64,50 @@ margin-right: auto;
 width: 50%;
 }
 #images{
-text-align: center;
-}
-#overlay {
-position: fixed; /* Sit on top of the page content */
-display: none; /* Hidden by default */
-width: 100%; /* Full width (cover the whole page) */
-height: 100%; /* Full height (cover the whole page) */
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-cursor: pointer; /* Add a pointer on hover */
-}
-.sidepanel {
-height: 640px; /* Specify a height */
-width: 0; /* 0 width - change this with JavaScript */
-position: fixed; /* Stay in place */
-z-index: 1; /* Stay on top */
-top: 0;
-left: 0;
-background-color: rgb(0, 71, 165); /* Black*/
-overflow-x: hidden; /* Disable horizontal scroll */
-padding-top: 60px; /* Place content 60px from the top */
-transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-}
+  text-align: center;
+}*/
 
-/* The sidepanel links */
-.sidepanel a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: #818181;
-display: block;
-transition: 0.3s;
+body{
+  background-color: cadetblue;
 }
-
-/* When you mouse over the navigation links, change their color */
-.sidepanel a:hover {
-color: #f1f1f1;
+#home{
+  position: relative;
+  width:360px;
+  height:640px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: sans-serif;
 }
-
-/* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width:360px;
+  height: 50px;
+  border: 1px solid red;
+  margin: 0 auto;
 }
-
-/* Style the button that is used to open the sidepanel */
-.openbtn {
-font-size: 20px;
-cursor: pointer;
-background-color: #111;
-color: white;
-padding: 10px 15px;
-border: none;
+.item{
+  display: flex;
 }
+.item a{
+  position: relative;
+  display: flex;
+  border: 1px solid blue;
+  width:40px;
+  height: 40px;
+}
+/*.movie_scroll{
 
-.openbtn:hover {
-background-color: #444;
-} 
+}*/
+.movie_options{
+  display: flex;
+}
+.movie_options a{
+  position: relative;
+  display: flex;
+  border: 1px solid purple;
+  width:128px;
+  height: 128px;
+  
+}
