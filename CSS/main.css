@@ -89,6 +89,7 @@ input[type=text],[type=password], select{
   .movie_scroll a{
     display: flex;
     position: relative;
+    justify-content: center;
     width:360px;
     height: 210px;
     border: 1px solid purple;
@@ -153,6 +154,12 @@ input[type=text],[type=password], select{
   }
   .poster{
     display: flex;
+    position: relative;
+    display: flex;
+    width:100px;
+    height:120px;
+    margin:0 auto;
+    border: 1px solid purple;
   }
   .poster a{
     position: relative;
@@ -190,7 +197,6 @@ input[type=text],[type=password], select{
     width: 360px;
     height: 100px;
     justify-content: left;
-    border: 1px solid green;
   }
   .nombre_teatro{
     text-align: center;
@@ -454,3 +460,45 @@ input[type=text],[type=password], select{
   }
 /*RECUPERAR CONTRASEÑA END*/
 
+/*PELICULA START*/
+  .contenedor_trailer{
+    display: flex;
+    width: 296px;
+    height: 232px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 32px;
+    margin-bottom: 22px;
+    border: 1px solid red;
+    justify-content: center;
+  }
+  .pelicula_fecha{
+    width:296px;
+    height:60px;
+    margin-top: 28px;
+    margin-left: 32px;
+    margin-right: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 18px;
+    margin-bottom: 26px;
+    border: 1px solid red;
+  }
+  .fecha_contenedor{
+    display: flex;
+    width: 59px;
+    height: 59px;
+    background-color: palevioletred;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  .texto_fecha{
+    font-size: 30px;
+  }
+  .calendario_icono{
+    width: 36px;
+    height: 36px;
+  }
+/*PELICULA END*/
