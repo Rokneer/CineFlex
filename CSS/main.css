@@ -3,8 +3,14 @@ body{
   /*width:360px;
   height:640px;*/
 }
+input[type=text],[type=password], select{
+  width: 100%;
+  padding: 16px 10px;
+  border: none;
+  background-color: white;
+}
 #item_1{
-  background-color:#ffb97b;
+  background-color:#ff847b;
 }
 #item_2{
   background-color:#e8ff64;
@@ -24,16 +30,41 @@ body{
 #barra_3{
   background-color: gray;
 }
-/* SPLASH START*/
-  #splash{
+/* MOBILE GENERAL START*/
+  #tamaño_mobile{
     position: relative;
     width:360px;
     height:640px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     font-family: sans-serif;
     border: 1px solid yellow;
   }
+  /* BANNER STYLE*/
+  .banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:360px;
+    height: 50px;
+    background-color: aquamarine;
+    margin: 0 auto;
+  }
+  .item_banner{
+    display: flex;
+  }
+  .item_banner a{
+    position: relative;
+    display: flex;
+    border: 1px solid blue;
+    width:40px;
+    height: 40px;
+    margin: 0 30px;
+  }
+/* MOBILE GENERAL END*/
+
+/* SPLASH START*/
   .logo_grande{
     display: flex;
     width:340px;
@@ -50,37 +81,6 @@ body{
 /* SPLASH END*/
 
 /* HOME START*/
-  #home{
-    position: relative;
-    width:360px;
-    height:640px;
-    margin: 0 auto;
-    overflow: hidden;
-    font-family: sans-serif;
-    border: 1px solid yellow;
-  }
-  /* BANNER STYLE*/
-  .banner{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width:360px;
-    height: 50px;
-    background-color: aquamarine;
-    border: 1px solid red;
-    margin: 0 auto;
-  }
-  .item_banner{
-    display: flex;
-  }
-  .item_banner a{
-    position: relative;
-    display: flex;
-    border: 1px solid blue;
-    width:40px;
-    height: 40px;
-    margin: 0 30px;
-  }
   /* SCROLL STYLE*/
   .movie_scroll{
     display: flex;
@@ -111,11 +111,10 @@ body{
   .pelicula_categoria a{
     position: relative;
     display: flex;
-    border: 1px solid purple;
     width:128px;
     height: 128px;
   }
-  .contenedor_img_categoria_pelicula{
+  .contenedor_categoria_pelicula{
     width:128px;
     height:128px;
     margin:0 auto;
@@ -132,24 +131,11 @@ body{
   .item_categoria span{
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  .subtitulo{
-    font-size: 20px;
     font-weight: bold;
   }
 /* HOME END*/
 
 /*LISTA PELICULAS START*/
-  #lista_pelicula{
-    position: relative;
-    width:360px;
-    height:640px;
-    margin: 0 auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-    font-family: sans-serif;
-    border: 1px solid yellow;
-  }
   .categoria{
     font-size: 40px;
     text-align: center;
@@ -167,7 +153,6 @@ body{
   }
   .poster{
     display: flex;
-    justify-content: space-between;
   }
   .poster a{
     position: relative;
@@ -177,11 +162,11 @@ body{
     margin:0 auto;
     border: 1px solid purple;
   }
-  .titulo{
+  .titulo_peliculas{
     font-size: 20px;
     font-weight: bold;
   }
-  .texto{
+  .texto_peliculas{
     font-size: 15px;
   }
   .texto_contenedor{
@@ -190,23 +175,10 @@ body{
     margin:0 6px;
     border: 1px solid orange;
   }
-  #item_1{
-    background-color:#ff7b7b;
-  }
 /*LISTA PELICULAS END*/
 
 /*TEATROS START*/
-  #teatros{
-    position: relative;
-    width:360px;
-    height:640px;
-    margin: 0 auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-    font-family: sans-serif;
-    border: 1px solid yellow;
-  }
-  .logo{
+  .logo_teatro{
     width: 60px;
     height: 60px;
     margin-top: 20px;
@@ -228,15 +200,6 @@ body{
 /*TEATROS END*/
 
 /*CUENTA START*/
-  #cuenta{
-    position: relative;
-    width:360px;
-    height:640px;
-    margin: 0 auto;
-    overflow: hidden;
-    font-family: sans-serif;
-    border: 1px solid yellow;
-  }
   .imagen_usuario{
     display: flex;
     width: 296px;
@@ -275,4 +238,219 @@ body{
     color: white;
   }
 /*CUENTA END*/
+
+/*EDITAR CUENTA START*/
+  .imagen_usuario_mediana{
+    display: flex;
+    width: 126px;
+    height: 126px;
+    margin-right: 20px;
+  }
+  .subir_foto{
+    display: flex;
+    background-color: #5e4caf;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .contenedor_subir_foto{
+    display: flex;
+    align-items: center;
+    width: 296px;
+    height: 126px;
+    margin: 32px;
+    margin-top: 15px;
+    border: 1px solid blue;
+  }
+  .contenedor_datos_cuenta{
+    display: flex;
+    width: 296px;
+    height: 406px;
+    margin: 32px;
+    border: 1px solid red;
+  }
+  .contenedor_lineas{
+    display: flex;
+    align-items: center;
+    width: 296px;
+    height: 50px;
+    border-bottom: 2px solid red;
+    background-color: white;
+  }
+  .texto_formulario{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .confirmar{
+    display: flex;
+    background-color: #5e4caf;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+/*EDITAR CUENTA END*/
+
+/*LOGIN START*/
+  .bienvenido{
+    display: flex;
+    text-align: center;
+    font-size: 48px;
+    text-emphasis: bolder;
+    color: white;
+  }
+  .bienvenido_contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:296px;
+    height: 66px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .logo_login{
+    display: flex;
+    width:120px;
+    margin: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid green;
+  }
+  .contenedor_datos_login{
+    display: flex;
+    width: 296px;
+    height: 337px;
+    margin: 32px;
+  }
+  .olvidate_contraseña{
+    display: flex;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+  }
+  .crear_cuenta{
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    justify-content: center;
+  }
+  .enviar{
+    display: flex;
+    background-color: #5e4caf;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 116px;
+    height: 54px;
+    border-radius: 0px;
+    font-size: 24px;
+    margin: auto;
+    cursor: pointer;
+  }
+/*LOGIN END*/
+
+/*REGISTRO START*/
+  .contenedor_datos_registro{
+    display: flex;
+    width: 296px;
+    height: 338px;
+    margin: 32px;
+    border: 2px solid red;
+  }
+  .contenedor_captcha{
+    display: flex;
+    width: 130px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-bottom: 2px solid red;
+  }
+  .checkbox_captcha{
+    margin: 6px;
+    width: 20%;
+  }
+  .texto_captcha{
+    display: flex;
+    font-size: 22px;
+    font-weight: bolder;
+    align-items: center;
+  }
+  .botones_registro{
+    display: flex;
+    background-color: #5e4caf;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .registrar{
+    margin-left: 29px;
+  }
+  .cancelar{
+    margin-right: 29px;
+  }
+  .contenedor_botones_registro{
+    display: flex;
+    width: 296px;
+    height: 40px;
+  }
+/*REGISTRO END*/
+
+/*RECUPERAR CONTRASEÑA START*/
+  .logo_recuperar{
+    display: flex;
+    width:120px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid green;
+  }  
+.titulo_recuperar{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .boton_salir{
+    display: flex;
+    margin-top: 19px;
+    margin-left: 19px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid blue;
+  }
+  .enviar_recuperar{
+    margin-top: 247px;
+    margin-left: 0px;
+  }
+  .restablecer{
+    margin-top: 121px;
+    margin-right: 0px;
+    width: 160px;
+  }
+  .texto_restablecer{
+    font-size: 15px;
+    font-weight: bold;
+  }
+/*RECUPERAR CONTRASEÑA END*/
 

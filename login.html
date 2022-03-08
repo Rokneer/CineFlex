@@ -6,28 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
     </head>
-    <div>
-        <body>
-            <h1>Bienvenido</h1>
-            <img src="imgs/logo_small.png" alt ="logo" style="width: 166px;height: 118px;">
-            <br>
+    <section id="tamaño_mobile">
+        <img class="logo_login" src="imgs/logo_small.png" alt ="logo">
+        <div class="bienvenido bienvenido_contenedor">Bienvenido</div>
+        <br>
+        <section  class="contenedor_datos_login">
             <form action="">
-                <label for="usuario">
+                <label class="contenedor_lineas texto_formulario" for="usuario">
                     Usuario:
                     <input type="text" id="usuario" name="usuario">
                 </label>
                 <br>
-                <label for="contraseña">
+                <label class="contenedor_lineas texto_formulario" for="contraseña">
                     Contraseña:
                     <input type="password" id="contraseña" name="contraseña">
                 </label>
-                <br>
-                <a href="recuperar_contraseña.html">¿Olvidaste la contraseña?</a>
-                <br>
-                <input type="button" value="Enviar">
-                <br>
-                <a href="registro.html">Crear cuenta</a>
+                <a class="olvidate_contraseña" href="recuperar_contraseña.html">¿Olvidaste la contraseña?</a>
+                <br><br>
+                <a href="home.html"><input class="enviar" type="button" value="Enviar"></a>
+                <br><br><br><br>
+                <a class="crear_cuenta" href="registro.html">Crear cuenta</a>
             </form>
-        </body>
-    </div>
+
+        </section>
+    </section>
 </html>

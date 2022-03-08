@@ -6,28 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recuperar contraseña</title>
     </head>
-  <div>
-    <body>
-      <a href=""><img src="imgs/close.png" alt ="salir" style="width: 40px;height: 40px;"></a>
-      <br>
-      <img src="imgs/logo_small.png" alt ="logo" style="width: 166px;height: 118px;">
-      <h1> Recuperar Contraseña </h1>
-      <br>
-      <form action="">
-        <label for="contraseña">
-          Contraseña nueva:
-          <input type="password" id="contraseña" name="contraseña">
-        </label>
-        <br>
-        <br>
-        <label for="contraseña">
-          Repetir contraseña nueva:
-          <input type="password" id="contraseña" name="contraseña">
-        </label>
-        <br>
-        <br>
-        <input type="button" value="Restablecer">
-      </form>
-    </body>
-  <div>
+    <section id="tamaño_mobile">
+      <a href="login.html"><img class="boton_salir" src="imgs/close.png" alt ="salir"></a>
+      <img class="logo_recuperar" src="imgs/logo_small.png" alt ="logo">
+      <div class="titulo_recuperar">Recuperar contraseña</div>
+      <section class="contenedor_datos_registro">
+        <form action="">
+          <label class="contenedor_lineas texto_restablecer" for="contraseña">
+            Contraseña nueva:
+            <input type="password" id="contraseña" name="contraseña">
+          </label>
+          <br>
+          <br>
+          <label class="contenedor_lineas texto_restablecer" for="contraseña">
+            Repetir contraseña nueva:
+            <input type="password" id="contraseña" name="contraseña">
+          </label>
+          <br>
+          <br>
+          <a href="login.html"><input class="botones_registro enviar restablecer" type="button" value="Restablecer"></a>
+        </form>
+      </section>    
+    </section>
 </html>
