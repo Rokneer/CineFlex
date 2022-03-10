@@ -1,8 +1,8 @@
-body{
+/*body{
   background-color: cadetblue;
-  /*width:360px;
-  height:640px;*/
-}
+  width:360px;
+  height:640px;
+}*/
 input[type=text],[type=password], select{
   width: 100%;
   padding: 16px 10px;
@@ -39,7 +39,7 @@ input[type=text],[type=password], select{
     overflow-x: hidden;
     overflow-y: auto;
     font-family: sans-serif;
-    border: 1px solid yellow;
+    background-color: cadetblue;
   }
   /* BANNER STYLE*/
   .banner{
@@ -89,6 +89,8 @@ input[type=text],[type=password], select{
   .movie_scroll a{
     display: flex;
     position: relative;
+    justify-items:center;
+    
     width:360px;
     height: 210px;
     border: 1px solid purple;
@@ -265,14 +267,15 @@ input[type=text],[type=password], select{
     height: 126px;
     margin: 32px;
     margin-top: 15px;
+    margin-bottom: 17px;
     border: 1px solid blue;
   }
   .contenedor_datos_cuenta{
     display: flex;
     width: 296px;
     height: 406px;
-    margin: 32px;
-    border: 1px solid red;
+    margin-left: 32px;
+    margin-right: 32px;
   }
   .contenedor_lineas{
     display: flex;
