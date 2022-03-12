@@ -26,10 +26,16 @@ input[type=text],[type=password], select{
   background-color:#5e4caf;
 }
 #barra_1{
-  background-color: coral;
+  background-color: #ff7f50;
 }
 #barra_2{
-  background-color: rgb(155, 75, 46);
+  background-color: #9b4b2e;
+}
+#barra_3{
+  background-color: #e9681e;
+}
+#texto{
+  color: white;
 }
 /* MOBILE GENERAL START*/
   #tamaño_mobile{
@@ -40,7 +46,7 @@ input[type=text],[type=password], select{
     overflow-x: hidden;
     overflow-y: auto;
     font-family: sans-serif;
-    background-color: cadetblue;
+    background-color: cadetblue; /*FONDO GENERAL*/
   }
   /* BANNER STYLE*/
   .banner{
@@ -49,7 +55,7 @@ input[type=text],[type=password], select{
     justify-content: space-evenly;
     width:360px;
     height: 50px;
-    background-color: aquamarine;
+    background-color: aquamarine; /*FONDO BANNER*/
     margin: 0 auto;
   }
   .item_banner{
@@ -500,3 +506,72 @@ input[type=text],[type=password], select{
     height: 36px;
   }
 /*PELICULA END*/
+
+/*SIDE PANEL START*/
+  #side_panel{
+    position: relative;
+    width: 198px;
+    height: 640px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #2b6163;
+  }
+  .logo_side_panel{
+    width: 48px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contenedor_logo_side_panel{
+    display: flex;
+    width:198px;
+    height: 58px;
+  }
+  .contenedor_opciones_SP_pelicula{
+    width:198px;
+    height:290px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  .opciones_SP_pelicula{
+    width:198px;
+    height:240px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 32px; 
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contenedor_opciones_SP_extra{
+    width:198px;
+    height:233px;
+    border-bottom: 3px solid black;
+  }
+  .opciones_SP_extra{
+    width:198px;
+    height:220px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px; 
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contenedor_opciones_SP{
+    width: 198px;
+    text-align: center;
+    border: 1px solid red;
+  }
+  .opciones_SP_texto{
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  .footer_SP{
+    width:198px;
+    height: 32px;
+  }
+/*SIDE PANEL END*/
