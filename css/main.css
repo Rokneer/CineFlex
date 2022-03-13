@@ -36,7 +36,12 @@ input[type=text],[type=password], select{
 }
 #texto{
   color: white;
+
 }
+#texto_2{
+  color: #000;
+}
+
 /* MOBILE GENERAL START*/
   #tamaño_mobile{
     position: relative;
