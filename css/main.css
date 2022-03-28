@@ -1,14 +1,8 @@
-/*body{
-  background-color: cadetblue;
-  width:360px;
-  height:640px;
-}*/
-
 input[type=text],[type=password], select{
   width: 100%;
   padding: 16px 10px;
   border: none;
-  background-color: white;
+  background-color: #ffffff;
 }
 #item_1{
   background-color:#ff847b;
@@ -26,17 +20,16 @@ input[type=text],[type=password], select{
   background-color:#5e4caf;
 }
 #barra_1{
-  background-color: rgb(235, 134, 97);
+  background-color: #eb8661;
 }
 #barra_2{
-  background-color: rgb(172, 88, 58);
+  background-color: #ac583a;
 }
 #barra_3{
   background-color: #eb7531;
 }
 #texto{
   color: white;
-
 }
 #texto_2{
   color: #000;
@@ -50,15 +43,17 @@ input[type=text],[type=password], select{
     margin: 0 auto;
     overflow-x: hidden;
     overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     font-family: sans-serif;
-    background-color: rgb(199, 249, 250); /*FONDO GENERAL*/
+    background-color: #c7f9fa; /*FONDO GENERAL*/
   }
   /* BANNER STYLE*/
   .banner{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width:360px;
+    width: 100%;
     height: 50px;
     background-color: #eb7531; /*FONDO BANNER*/
     margin: 0 auto;
@@ -69,11 +64,96 @@ input[type=text],[type=password], select{
   .item_banner a{
     position: relative;
     display: flex;
-    border: 1px solid blue;
     width:40px;
     height: 40px;
     margin: 0 30px;
   }
+  /*SIDE PANEL START*/
+  .side_panel{
+    position: absolute;
+    top: 5px;
+    left: 2.8%;
+    transition: left 0.4s;
+    z-index: 2;
+    cursor: pointer;
+    background-color: #eb7531;
+    border-radius: 0.5rem;
+  }
+  .checkbox:checked ~ .side_panel{
+    left: 50%;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .SP_container{
+    width: 50%;
+    height: 100%;
+    background-color: #2b6163;
+    top: 0;
+    left: -50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: left 0.4s;
+    z-index: 2;
+  }
+  .checkbox:checked ~ .SP_container{
+    left: 0;
+  }
+  .dim_background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.507);
+    top: 0;
+    left: -100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: left 0.3s;
+    z-index: 1;
+  }
+  .checkbox:checked ~ .dim_background{
+    left: 0;
+  }
+  .checkbox{
+    display: none;
+  }
+  .hamburger{
+    width: 40px;
+    height: 40px;
+  }
+  .logo_SP{
+    width: 48px;
+    margin: auto;
+    clear: both;
+  }
+  .contenedor_logo_SP{
+    display: flex;
+    width:auto;
+    height: 58px;
+    margin: auto;
+  }
+  .opciones_SP{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-row-gap: 15px; 
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contenedor_opciones_SP{
+    width: auto;
+    text-align: center;
+  }
+  .opciones_SP_texto{
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  .footer_SP{
+    width:auto;
+    height: 46px;
+  }
+  /*SIDE PANEL END*/
 /* MOBILE GENERAL END*/
 
 /* SPLASH START*/
@@ -94,19 +174,64 @@ input[type=text],[type=password], select{
 
 /* HOME START*/
   /* SCROLL STYLE*/
-  .movie_scroll{
-    display: flex;
-    justify-items:center;
-  }
-  .movie_scroll a{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    width:360px;
+  #slideshow {
+    overflow: hidden;
+    width: 360px;
     height: 210px;
-    border: 1px solid purple;
-    margin-top:15px;
-    margin-bottom:7px;
+    margin: 16px auto;
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  .slide {
+    float: left;
+    width: 360px;
+    height: 210px;
+    margin: auto;
+    text-align: center;
+  }
+  .slide a img{
+    float: left;
+    width: 360px;
+    height: 210px;
+    margin: auto;
+    justify-content: center;
+  }
+  .slide-wrapper {
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(360px * 4);
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+  }
+  .slide:nth-child(1) {
+    background: green;
+  }
+  .slide:nth-child(2) {
+    background: pink;
+  }
+  .slide:nth-child(3) {
+    background: red;
+  }
+  .slide:nth-child(4) {
+    background: yellow;
+  }
+  /* Define the animation
+  for the slideshow */
+  @keyframes slide {
+    20% {
+      margin-left: 0px;
+    }
+    40% {
+      margin-left: calc(-360px * 1);
+    }   
+    60% {
+      margin-left: calc(-360px * 2);
+    }   
+    80% {
+      margin-left: calc(-360px * 3);
+    }
   }
   /* MOVIE OPTIONS STYLE*/
   .pelicula_categoria{
@@ -152,9 +277,8 @@ input[type=text],[type=password], select{
   .categoria{
     font-size: 40px;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px;
     font-weight: bold;
-    border: 1px solid red;
   }
   .contenedor_pelicula{
     display: flex;
@@ -168,18 +292,18 @@ input[type=text],[type=password], select{
     display: flex;
     position: relative;
     display: flex;
+    justify-content: center;
     width:100px;
     height:120px;
     margin:0 auto;
-    border: 1px solid purple;
   }
   .poster a{
     position: relative;
     display: flex;
+    justify-content: center;
     width:100px;
     height:120px;
     margin:0 auto;
-    border: 1px solid purple;
   }
   .titulo_peliculas{
     font-size: 20px;
@@ -192,7 +316,6 @@ input[type=text],[type=password], select{
     width:200px;
     height:120px;
     margin:0 6px;
-    border: 1px solid orange;
   }
 /*LISTA PELICULAS END*/
 
@@ -224,7 +347,6 @@ input[type=text],[type=password], select{
     margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid orange;
   }
   .nombre_usuario{
     text-align: center;
@@ -267,7 +389,6 @@ input[type=text],[type=password], select{
   .subir_foto{
     display: flex;
     border: none;
-    color: white;
     text-align: center;
     text-decoration: none;
     width: 160px;
@@ -283,7 +404,6 @@ input[type=text],[type=password], select{
     margin: 32px;
     margin-top: 15px;
     margin-bottom: 17px;
-    border: 1px solid blue;
   }
   .contenedor_datos_cuenta{
     display: flex;
@@ -304,11 +424,9 @@ input[type=text],[type=password], select{
     font-size: 24px;
     font-weight: bold;
   }
-  .confirmar{
+  .confirmar_boton{
     display: flex;
-    border: none;
-    color: white;
-    text-align: center;
+    align-items: center;
     text-decoration: none;
     width: 140px;
     height: 50px;
@@ -343,7 +461,6 @@ input[type=text],[type=password], select{
     margin: 32px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid green;
   }
   .contenedor_datos_login{
     display: flex;
@@ -437,7 +554,6 @@ input[type=text],[type=password], select{
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid green;
   }  
 .titulo_recuperar{
     font-size: 28px;
@@ -452,7 +568,6 @@ input[type=text],[type=password], select{
     margin-left: 19px;
     width: 40px;
     height: 40px;
-    border: 1px solid blue;
   }
   .enviar_recuperar{
     margin-top: 247px;
@@ -477,7 +592,7 @@ input[type=text],[type=password], select{
     margin-right: auto;
     margin-left: auto;
     margin-top: 32px;
-    margin-bottom: 22px;
+    margin-bottom: 32px;
     border: 1px solid red;
     justify-content: center;
   }
@@ -492,7 +607,6 @@ input[type=text],[type=password], select{
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 18px;
     margin-bottom: 26px;
-    border: 1px solid red;
   }
   .fecha_contenedor{
     display: flex;
@@ -504,7 +618,7 @@ input[type=text],[type=password], select{
     border-radius: 20px;
   }
   .texto_fecha{
-    font-size: 30px;
+    font-size: 28px;
   }
   .calendario_icono{
     width: 36px;
@@ -512,71 +626,26 @@ input[type=text],[type=password], select{
   }
 /*PELICULA END*/
 
-/*SIDE PANEL START*/
-  #side_panel{
-    position: relative;
-    width: 198px;
-    height: 640px;
-    margin: 0 auto;
-    font-family: sans-serif;
-    background-color: #2b6163;
-  }
-  .logo_side_panel{
-    width: 48px;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .contenedor_logo_side_panel{
-    display: flex;
-    width:198px;
-    height: 58px;
-  }
-  .contenedor_opciones_SP_pelicula{
-    width:198px;
-    height:290px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-  }
-  .opciones_SP_pelicula{
-    width:198px;
-    height:240px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-row-gap: 32px; 
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .contenedor_opciones_SP_extra{
-    width:198px;
-    height:233px;
-    border-bottom: 3px solid black;
-  }
-  .opciones_SP_extra{
-    width:198px;
-    height:220px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 20px; 
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .contenedor_opciones_SP{
-    width: 198px;
-    text-align: center;
-    border: 1px solid red;
-  }
-  .opciones_SP_texto{
-    font-size: 25px;
-    font-weight: bolder;
-    text-decoration: none;
-  }
-  .footer_SP{
-    width:198px;
-    height: 32px;
-  }
-/*SIDE PANEL END*/
+
+/* styling search bar */
+.search input[type=text]{
+  width:300px;
+  height:25px;
+  border-radius:25px;
+  border: none;
+}
+    
+.search{
+  float:right;
+  margin:7px;
+}
+    
+.search button{
+  color: #f2f2f2;
+  float: right;
+  padding: 5px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+} 
