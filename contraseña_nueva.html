@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+        <link rel='stylesheet' type='text/css' media='screen and (min-width:744px)' href='css/main_tablet.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recuperar contraseña</title>
     </head>
@@ -10,22 +11,19 @@
     <section id="tamaño_mobile">
       <a href="login.html"><img class="boton_salir" src="imgs/close.png" alt ="salir"></a>
       <img class="logo_recuperar" src="imgs/logo_small.png" alt ="logo">
-      <div class="titulo_recuperar">Recuperar contraseña</div>
+      <div class="titulo_recuperar contenedor_recuperar">Recuperar contraseña</div>
       <section class="contenedor_datos_registro">
         <form action="">
           <label class="contenedor_lineas texto_restablecer" for="contraseña">
             Contraseña nueva:
             <input type="password" id="contraseña" name="contraseña">
           </label>
-          <br>
-          <br>
+          <br><br>
           <label class="contenedor_lineas texto_restablecer" for="contraseña">
-            Repetir contraseña nueva:
+            Repetir contraseña:
           <input type="password" id="contraseña" name="contraseña">
           </label>
-          <br>
-          <br>
-          <a href="login.html"><input class="botones_registro enviar restablecer" id="item_5" type="button" value="Restablecer"></a>
+          <a href="login.html"><input class="botones_registro enviar restablecer" type="button" value="Restablecer"></a>
         </form>
       </section>    
     </section>

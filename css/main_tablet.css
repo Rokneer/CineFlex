@@ -1,0 +1,391 @@
+#tamaño_mobile{
+  height: 1133px;
+}
+/* BANNER STYLE*/
+.banner{
+  height: 80px;
+}
+.item_banner a{
+  width: 60px;
+  height: 60px;
+  margin: 0 75px;
+}
+/*SIDE PANEL START*/
+.side_panel{
+  top: 7px;
+}
+.checkbox:checked ~ .side_panel{
+  left: 40%;
+}
+.SP_container{
+  width: 40%;
+  left: -40%;
+}
+.checkbox:checked ~ .SP_container{
+  left: 0;
+}
+.hamburger{
+  width: 60px;
+  height: 60px;
+}
+.logo_SP{
+  width: 60px;
+}
+.contenedor_logo_SP{
+  height: 80px;
+  border-bottom: solid white 6px;
+}
+.opciones_SP{
+  grid-row-gap: 55px; 
+}
+.opciones_SP_texto{
+  font-size: 36px;
+}
+.footer_SP{
+  height: 60px;
+  border-top: solid white 6px;
+}
+/*SIDE PANEL END*/
+/* MOBILE GENERAL END*/
+
+/* SPLASH START*/
+.logo_grande{
+  width:612px;
+}
+.cargando{
+  font-size: 72px;
+}
+/* SPLASH END*/
+
+/* HOME START*/
+/* SCROLL STYLE*/
+#slideshow {
+  width: 744px;
+  height: 360px;
+  border: 5px solid white;
+}
+.slide {
+  height: 360px;
+}
+.slide a img{
+  width: 744px;
+  height: 360px;
+}
+.slide-wrapper {
+  width: calc(744px * 4);
+}
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  40% {
+    margin-left: calc(-744px * 1);
+  }   
+  60% {
+    margin-left: calc(-744px * 2);
+  }   
+  80% {
+    margin-left: calc(-744px * 3);
+  }
+}
+/* MOVIE OPTIONS STYLE*/
+.pelicula_categoria{
+  height: 620px;
+  width: 650px;
+  margin: 30px auto;
+  margin-bottom: 10px auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
+.pelicula_categoria a{
+  width: 240px;
+  height: 240px;
+}
+.contenedor_categoria_pelicula{
+  width:240px;
+  height:240px;
+  margin-top:12px;
+  border-bottom: solid black 2px;
+  border-right: solid black 2px;
+}
+.item_categoria span{
+  font-size: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 2px;
+  border-right: solid black 2px;
+  background-color:#FF8178;
+}
+/* HOME END*/
+
+/*LISTA PELICULAS START*/
+.categoria{
+  font-size: 100px;
+  margin: 50px;
+  border-radius: 30px;
+  background-color: #8E0505;
+  color: white;
+}
+.lista_esperados{
+  font-size: 80px;
+}
+.contenedor_pelicula{
+  width: 612px;
+  height: 232px;
+  background-color: #FF8178;
+  color: white;
+}
+.poster{
+  width: 200px;
+  height: 232px;
+}
+.titulo_peliculas{
+  font-size: 45px;
+  padding: 12px;
+  padding-left: 15px;
+}
+.texto_peliculas{
+  font-size: 25px;
+  padding-left: 15px;
+}
+.texto_contenedor{
+  width: 414px;
+  height: 232px;
+}
+/*LISTA PELICULAS END*/
+
+/*TEATROS START*/
+.contenedor_teatro{
+  width: 744px;
+  height: 206px;
+}
+.logo_teatro{
+  width: 130px;
+  height: 130px;
+  margin-left: 66px;
+  margin-right: 45px;
+}
+.nombre_teatro{
+  font-size: 60px;
+}
+/*TEATROS END*/
+
+/*CUENTA START*/
+.imagen_usuario{
+  width: 510px;
+  margin-top: 30px;
+}
+.nombre_usuario{
+  font-size: 120px;
+  margin: 20px;
+}
+.editar_boton{
+  margin-top: 40px;
+  width: 420px;
+  height: 100px;
+  border-radius: 40px;
+}
+.salir_boton{
+  margin-top: 30px;
+  width: 290px;
+  height: 100px;
+  border-radius: 40px;
+}
+.texto_opciones{
+  font-size: 70px;
+}
+/*CUENTA END*/
+
+/*EDITAR CUENTA START*/
+.contenedor_subir_foto{
+  width: 524px;
+  height: 226px;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+.imagen_usuario_mediana{
+  width: 226px;
+  height: 226px;
+  margin-right: 34px;
+}
+.subir_foto{
+  width: 264px;
+  height: 92px;
+  font-size: 45px;
+}
+.contenedor_datos_cuenta{
+  width: 612px;
+  height: 716px;
+}
+.contenedor_lineas{
+  width: 612px;
+  height: 90px;
+  border-bottom: 6px solid #8E0505;
+}
+.texto_formulario{
+  font-size: 42px;
+}
+.confirmar_boton{
+  width: 260px;
+  height: 90px;
+  border-radius: 40px;
+  font-size: 42px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+/*EDITAR CUENTA END*/
+
+/*LOGIN START*/
+.bienvenido{
+  font-size: 90px;
+}
+.bienvenido_contenedor{
+  width: 618px;
+  height: 126px;
+  border-top: 6px solid #8E0505;
+  border-bottom: 6px solid #8E0505;
+}
+.logo_login{
+  width:200px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.contenedor_datos_login{
+  width: 618px;
+  height: 592px;
+  margin-top: 70px;
+}
+.olvidate_contraseña{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+.enviar{
+  width: 226px;
+  height: 104px;
+  font-size: 50px;
+  margin-bottom: 90px;
+}
+.crear_cuenta{
+  font-size: 35px;
+}
+/*LOGIN END*/
+
+/*REGISTRO START*/
+.contenedor_datos_registro{
+  width: 612px;
+  height: 690px;
+}
+.contenedor_captcha{
+  width: 246px;
+  height: 94px;
+  margin-top: 38px;
+  margin-bottom: 20px;
+  border-bottom: 6px solid #8E0505;
+}
+.checkbox_captcha{
+  margin: 6px;
+  width: 20%;
+}
+.texto_captcha{
+  font-size: 42px;
+}
+.contenedor_botones_registro{
+  width: 612px;
+  height: 76px;
+}
+.botones_registro{
+  color: white;
+  width: 246px;
+  height: 76px;
+  font-size: 42px;
+}
+.registrar{
+  margin-left: 64px;
+}
+.cancelar{
+  margin-right: 64px;
+}
+/*REGISTRO END*/
+
+/*RECUPERAR CONTRASEÑA START*/
+.logo_recuperar{
+  width: 264px;
+  margin-bottom: 52px;
+}
+.contenedor_recuperar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 612px;
+  height: 126px;
+  border-top: solid #8E0505 6px;
+  border-bottom: solid #8E0505 6px;
+}
+.titulo_recuperar{
+  font-size: 56px;
+}
+.enviar_recuperar{
+  margin-top: 340px;
+  margin-left: 0px;
+}
+.boton_salir{
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 50px;
+  height: 50px;
+}
+.restablecer{
+  margin-top: 280px;
+  width: 316px;
+}
+.texto_restablecer{
+  font-size: 30px;
+}
+/*RECUPERAR CONTRASEÑA END*/
+
+/*PELICULA START*/
+.contenedor_trailer{
+  width: 612px;
+  height: 366px;
+  margin-top: 48px;
+  margin-bottom: 90px;
+}
+.pelicula_fecha{
+  width: 611px;
+  height: 126px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  grid-column-gap: 36px;
+}
+.fecha_contenedor{
+  width: 126px;
+  height: 126px;
+  border-radius: 20px;
+}
+.texto_fecha{
+  font-size: 55px;
+  color: white;
+}
+.calendario_icono{
+  width: 80px;
+  height: 80px;
+}
+/*PELICULA END*/
+
+/*Styling search bar */
+.search input[type=text]{
+  width:300px;
+  height:25px;
+  border-radius:25px;
+} 
+.search{
+  margin:7px;
+}
+.search button{
+  padding: 5px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+}

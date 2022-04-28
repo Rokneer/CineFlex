@@ -4,648 +4,634 @@ input[type=text],[type=password], select{
   border: none;
   background-color: #ffffff;
 }
-#item_1{
-  background-color:#ff847b;
+/* MOBILE GENERAL START*/
+#tamaño_mobile{
+  position: relative;
+  height:640px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  font-family: sans-serif;
+  background-color: #FFDFDD; /*FONDO GENERAL*/
 }
-#item_2{
-  background-color:#e4f38d;
+/* BANNER STYLE*/
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+  background-color: #8E0505; /*FONDO BANNER*/
+  margin: 0 auto;
 }
-#item_3{
-  background-color:#ffcb71;
+.item_banner{
+  display: flex;
 }
-#item_4{
-  background-color:#74afeb;
+.item_banner a{
+  position: relative;
+  display: flex;
+  width:40px;
+  height: 40px;
+  margin: 0 30px;
 }
-#item_5{
-  background-color:#5e4caf;
+/*SIDE PANEL START*/
+.side_panel{
+  position: absolute;
+  top: 5px;
+  left: 2.8%;
+  transition: left 0.4s;
+  z-index: 2;
+  cursor: pointer;
+  background-color: #8E0505;
+  border-radius: 0.5rem;
 }
-#barra_1{
-  background-color: #eb8661;
+.checkbox:checked ~ .side_panel{
+  left: 50%;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
-#barra_2{
-  background-color: #ac583a;
+.SP_container{
+  width: 50%;
+  height: 100%;
+  background-color: #8E0505;
+  top: 0;
+  left: -50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transition: left 0.4s;
+  z-index: 2;
 }
-#barra_3{
-  background-color: #eb7531;
+.checkbox:checked ~ .SP_container{
+  left: 0;
 }
-#texto{
+.dim_background{
+  width: 100%;
+  height: 100%;
+  background-color: #42424281;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transition: left 0.3s;
+  z-index: 1;
+}
+.checkbox:checked ~ .dim_background{
+  left: 0;
+}
+.checkbox{
+  display: none;
+}
+.hamburger{
+  width: 40px;
+  height: 40px;
+}
+.logo_SP{
+  width: 48px;
+  margin: auto;
+  clear: both;
+}
+.contenedor_logo_SP{
+  display: flex;
+  width:auto;
+  height: 58px;
+  margin: auto;
+  border-bottom: solid white 4px;
+}
+.opciones_SP{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-row-gap: 15px; 
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contenedor_opciones_SP{
+  width: auto;
+  text-align: center;
+}
+.opciones_SP_texto{
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
   color: white;
 }
-#texto_2{
-  color: #000;
+.footer_SP{
+  width:auto;
+  height: 46px;
+  border-top: solid white 4px;
 }
-
-/* MOBILE GENERAL START*/
-  #tamaño_mobile{
-    position: relative;
-    width:360px;
-    height:640px;
-    margin: 0 auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    font-family: sans-serif;
-    background-color: #c7f9fa; /*FONDO GENERAL*/
-  }
-  /* BANNER STYLE*/
-  .banner{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 50px;
-    background-color: #eb7531; /*FONDO BANNER*/
-    margin: 0 auto;
-  }
-  .item_banner{
-    display: flex;
-  }
-  .item_banner a{
-    position: relative;
-    display: flex;
-    width:40px;
-    height: 40px;
-    margin: 0 30px;
-  }
-  /*SIDE PANEL START*/
-  .side_panel{
-    position: absolute;
-    top: 5px;
-    left: 2.8%;
-    transition: left 0.4s;
-    z-index: 2;
-    cursor: pointer;
-    background-color: #eb7531;
-    border-radius: 0.5rem;
-  }
-  .checkbox:checked ~ .side_panel{
-    left: 50%;
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
-  .SP_container{
-    width: 50%;
-    height: 100%;
-    background-color: #2b6163;
-    top: 0;
-    left: -50%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    transition: left 0.4s;
-    z-index: 2;
-  }
-  .checkbox:checked ~ .SP_container{
-    left: 0;
-  }
-  .dim_background{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(100, 100, 100, 0.507);
-    top: 0;
-    left: -100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    transition: left 0.3s;
-    z-index: 1;
-  }
-  .checkbox:checked ~ .dim_background{
-    left: 0;
-  }
-  .checkbox{
-    display: none;
-  }
-  .hamburger{
-    width: 40px;
-    height: 40px;
-  }
-  .logo_SP{
-    width: 48px;
-    margin: auto;
-    clear: both;
-  }
-  .contenedor_logo_SP{
-    display: flex;
-    width:auto;
-    height: 58px;
-    margin: auto;
-  }
-  .opciones_SP{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-row-gap: 15px; 
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .contenedor_opciones_SP{
-    width: auto;
-    text-align: center;
-  }
-  .opciones_SP_texto{
-    font-size: 25px;
-    font-weight: bolder;
-    text-decoration: none;
-  }
-  .footer_SP{
-    width:auto;
-    height: 46px;
-  }
-  /*SIDE PANEL END*/
+/*SIDE PANEL END*/
 /* MOBILE GENERAL END*/
 
 /* SPLASH START*/
-  .logo_grande{
-    display: flex;
-    width:340px;
-    margin-top: 30%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .cargando{
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    margin: 60px;
-  }
+.logo_grande{
+  display: flex;
+  width: 256px;
+  margin: auto;
+  margin-top: 30%;
+}
+.cargando{
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 30%;
+  color: black;
+}
 /* SPLASH END*/
 
 /* HOME START*/
-  /* SCROLL STYLE*/
-  #slideshow {
-    overflow: hidden;
-    width: 360px;
-    height: 210px;
-    margin: 16px auto;
-    border: 2px solid black;
-    border-left: 0px;
-    border-right: 0px;
+/* SCROLL STYLE*/
+#slideshow {
+  overflow: hidden;
+  width: 360px;
+  height: 220px;
+  margin-bottom: 16px auto;
+  border: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+}
+.slide {
+  float: left;
+  width: auto;
+  height: 220px;
+  margin: auto;
+  text-align: center;
+}
+.slide a img{
+  float: left;
+  width: 360px;
+  height: 220px;
+  margin: auto;
+  justify-content: center;
+}
+.slide-wrapper {
+  /* Calculate the total width on the
+  basis of number of slides */
+  width: calc(360px * 4);
+  /* Specify the animation with the
+  duration and speed */
+  animation: slide 20s ease infinite;
+}
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+  20% {
+    margin-left: 0px;
   }
-  .slide {
-    float: left;
-    width: 360px;
-    height: 210px;
-    margin: auto;
-    text-align: center;
+  40% {
+    margin-left: calc(-360px * 1);
+  }   
+  60% {
+    margin-left: calc(-360px * 2);
+  }   
+  80% {
+    margin-left: calc(-360px * 3);
   }
-  .slide a img{
-    float: left;
-    width: 360px;
-    height: 210px;
-    margin: auto;
-    justify-content: center;
-  }
-  .slide-wrapper {
-    /* Calculate the total width on the
-    basis of number of slides */
-    width: calc(360px * 4);
-    /* Specify the animation with the
-    duration and speed */
-    animation: slide 20s ease infinite;
-  }
-  .slide:nth-child(1) {
-    background: green;
-  }
-  .slide:nth-child(2) {
-    background: pink;
-  }
-  .slide:nth-child(3) {
-    background: red;
-  }
-  .slide:nth-child(4) {
-    background: yellow;
-  }
-  /* Define the animation
-  for the slideshow */
-  @keyframes slide {
-    20% {
-      margin-left: 0px;
-    }
-    40% {
-      margin-left: calc(-360px * 1);
-    }   
-    60% {
-      margin-left: calc(-360px * 2);
-    }   
-    80% {
-      margin-left: calc(-360px * 3);
-    }
-  }
-  /* MOVIE OPTIONS STYLE*/
-  .pelicula_categoria{
-    height:300px;
-    width:300px;
-    margin:10px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 30px; 
-    align-items: center;
-    justify-items:center;
-  }
-  .pelicula_categoria a{
-    position: relative;
-    display: flex;
-    width:128px;
-    height: 128px;
-  }
-  .contenedor_categoria_pelicula{
-    width:128px;
-    height:128px;
-    margin:0 auto;
-    margin-top:12px;
-    border-radius:10px;
-  }
-  .item_categoria{
-    text-align:center;
-    height:128px;
-    width:128px;
-    line-height:2px; 
-    margin-top:10px;
-  }
-  .item_categoria span{
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
+}
+/* MOVIE OPTIONS STYLE*/
+.pelicula_categoria{
+  height:320px;
+  width:300px;
+  margin:10px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 15px; 
+  align-items: center;
+  justify-items:center;
+}
+.pelicula_categoria a{
+  position: relative;
+  display: flex;
+  width:128px;
+  height: 128px;
+}
+.contenedor_categoria_pelicula{
+  width:auto;
+  height:auto;
+  margin:0 auto;
+  margin-top:12px;
+  border-radius:10px;
+  background-color:#FF8178;
+}
+.item_categoria{
+  text-align:center;
+  height:auto;
+  width:auto;
+  line-height:6px; 
+  margin-top:10px;
+}
+.item_categoria span{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 /* HOME END*/
 
 /*LISTA PELICULAS START*/
-  .categoria{
-    font-size: 40px;
-    text-align: center;
-    margin: 10px;
-    font-weight: bold;
-  }
-  .contenedor_pelicula{
-    display: flex;
-    width: 296px;
-    height: 120px;
-    justify-content: left;
-    margin-left: 32px;
-    margin-top: 10px;
-  }
-  .poster{
-    display: flex;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width:100px;
-    height:120px;
-    margin:0 auto;
-  }
-  .poster a{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width:100px;
-    height:120px;
-    margin:0 auto;
-  }
-  .titulo_peliculas{
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .texto_peliculas{
-    font-size: 15px;
-  }
-  .texto_contenedor{
-    width:200px;
-    height:120px;
-    margin:0 6px;
-  }
+.categoria{
+  font-size: 55px;
+  margin: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.lista_esperados{
+  font-size: 40px;
+}
+.contenedor_pelicula{
+  display: flex;
+  width: 296px;
+  height: 120px;
+  justify-content: left;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.poster{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width:100px;
+  height:120px;
+  margin:0 auto;
+  background-color: #8E0505;
+}
+.poster a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width:auto;
+  height:auto;
+  margin:0 auto;
+}
+.titulo_peliculas{
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.texto_peliculas{
+  font-size: 15px;
+  padding-left: 15px;
+}
+.texto_contenedor{
+  width:200px;
+  height:120px;
+}
 /*LISTA PELICULAS END*/
 
 /*TEATROS START*/
-  .logo_teatro{
-    width: 60px;
-    height: 60px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 25px;
-  }
-  .contenedor_teatro{
-    display: flex;
-    width: 360px;
-    height: 100px;
-    justify-content: left;
-  }
-  .nombre_teatro{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 30px;
-  }
+.contenedor_teatro{
+  display: flex;
+  width: 360px;
+  height: 100px;
+  margin: auto;
+  align-items: center;
+  background-color: #D23A3A;
+}
+.teatro_alt{
+  background-color: #8E0505;
+}
+.logo_teatro{
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  margin-right: 25px;
+}
+.nombre_teatro{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
 /*TEATROS END*/
 
 /*CUENTA START*/
-  .imagen_usuario{
-    display: flex;
-    width: 296px;
-    margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nombre_usuario{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    margin: 20px;
-  }
-  .editar_boton{
-    display: flex;
-    margin: auto;
-    margin-top: 25px;
-    width: 204px;
-    height: 50px;
-    border-radius: 20px;
-  }
-  .salir_boton{
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-    align-items: center;
-    width: 140px;
-    height: 50px;
-    border-radius: 20px;
-  }
-  .texto_opciones{
-    justify-content: center;
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-  }
+.imagen_usuario{
+  display: flex;
+  width: 296px;
+  margin: auto;
+  margin-top: 24px;
+  background-color: #FF8178;
+  border-radius: 50%;
+}
+.nombre_usuario{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px;
+}
+.editar_boton{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  margin-top: 25px;
+  width: 204px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #8E0505;
+}
+.salir_boton{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+  width: 140px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #8E0505;
+}
+.texto_opciones{
+  justify-content: center;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
 /*CUENTA END*/
 
 /*EDITAR CUENTA START*/
-  .imagen_usuario_mediana{
-    display: flex;
-    width: 126px;
-    height: 126px;
-    margin-right: 20px;
-  }
-  .subir_foto{
-    display: flex;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    width: 160px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .contenedor_subir_foto{
-    display: flex;
-    align-items: center;
-    width: 296px;
-    height: 126px;
-    margin: 32px;
-    margin-top: 15px;
-    margin-bottom: 17px;
-  }
-  .contenedor_datos_cuenta{
-    display: flex;
-    width: 296px;
-    height: 406px;
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-  .contenedor_lineas{
-    display: flex;
-    align-items: center;
-    width: 296px;
-    height: 50px;
-    border-bottom: 2px solid red;
-    background-color: white;
-  }
-  .texto_formulario{
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .confirmar_boton{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    width: 140px;
-    height: 50px;
-    border-radius: 20px;
-    font-size: 20px;
-    cursor: pointer;
-  }
+.contenedor_subir_foto{
+  display: flex;
+  align-items: center;
+  width: 296px;
+  height: 126px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+.imagen_usuario_mediana{
+  display: flex;
+  width: 126px;
+  height: 126px;
+  margin-right: 20px;
+  background-color: #FF8178;
+  border-radius: 50%;
+}
+.subir_foto{
+  display: flex;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #8E0505;
+}
+.contenedor_datos_cuenta{
+  display: flex;
+  width: 296px;
+  height: 406px;
+  margin: auto;
+}
+.contenedor_lineas{
+  display: flex;
+  align-items: center;
+  width: 296px;
+  height: 50px;
+  border-bottom: 3px solid #8E0505;
+  background-color: white;
+}
+.texto_formulario{
+  font-size: 24px;
+  font-weight: bold;
+}
+.confirmar_boton{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 2%;
+  width: 140px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #FF8178;
+}
 /*EDITAR CUENTA END*/
 
 /*LOGIN START*/
-  .bienvenido{
-    display: flex;
-    text-align: center;
-    font-size: 48px;
-    text-emphasis: bolder;
-    color: white;
-  }
-  .bienvenido_contenedor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:296px;
-    height: 66px;
-    margin-left: auto;
-    margin-right: auto;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-  }
-  .logo_login{
-    display: flex;
-    width:120px;
-    margin: 32px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .contenedor_datos_login{
-    display: flex;
-    width: 296px;
-    height: 337px;
-    margin: 32px;
-  }
-  .olvidate_contraseña{
-    display: flex;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-  }
-  .crear_cuenta{
-    display: flex;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    justify-content: center;
-  }
-  .enviar{
-    display: flex;
-    border: none;
-    color: white;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 116px;
-    height: 54px;
-    border-radius: 0px;
-    font-size: 24px;
-    margin: auto;
-    cursor: pointer;
-  }
+.bienvenido{
+  display: flex;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bolder;
+}
+.bienvenido_contenedor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:296px;
+  height: 66px;
+  margin: auto;
+  border-top: 3px solid #8E0505;
+  border-bottom: 3px solid #8E0505;
+}
+.logo_login{
+  display: flex;
+  width:120px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.contenedor_datos_login{
+  display: flex;
+  width: 296px;
+  height: 330px;
+  margin: auto;
+  margin-top: 32px;
+}
+.olvidate_contraseña{
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+.enviar{
+  display: flex;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: auto;
+  margin-bottom: 60px;
+  width: 116px;
+  height: 54px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #FF8178;
+}
+.crear_cuenta{
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  justify-content: center;
+}
 /*LOGIN END*/
 
 /*REGISTRO START*/
-  .contenedor_datos_registro{
-    display: flex;
-    width: 296px;
-    height: 338px;
-    margin: 32px;
-    border: 2px solid red;
-  }
-  .contenedor_captcha{
-    display: flex;
-    width: 130px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    background-color: white;
-    border-bottom: 2px solid red;
-  }
-  .checkbox_captcha{
-    margin: 6px;
-    width: 20%;
-  }
-  .texto_captcha{
-    display: flex;
-    font-size: 22px;
-    font-weight: bolder;
-    align-items: center;
-  }
-  .botones_registro{
-    display: flex;
-    border: none;
-    color: white;
-    width: 120px;
-    height: 40px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  .registrar{
-    margin-left: 29px;
-  }
-  .cancelar{
-    margin-right: 29px;
-  }
-  .contenedor_botones_registro{
-    display: flex;
-    width: 296px;
-    height: 40px;
-  }
+.contenedor_datos_registro{
+  display: flex;
+  width: 296px;
+  height: 338px;
+  margin: auto;
+}
+.contenedor_captcha{
+  display: flex;
+  width: 130px;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+  border-bottom: 2px solid #8E0505;
+}
+.checkbox_captcha{
+  margin: 6px;
+  width: 20%;
+}
+.texto_captcha{
+  display: flex;
+  font-size: 22px;
+  font-weight: bolder;
+  align-items: center;
+}
+.contenedor_botones_registro{
+  display: flex;
+  width: 296px;
+  height: 40px;
+  margin: auto;
+  justify-content: center;
+}
+.botones_registro{
+  display: flex;
+  border: none;
+  color: white;
+  width: 120px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #FF8178;
+}
+.registrar{
+  margin-left: 29px;
+}
+.cancelar{
+  margin-right: 29px;
+}
 /*REGISTRO END*/
 
 /*RECUPERAR CONTRASEÑA START*/
-  .logo_recuperar{
-    display: flex;
-    width:120px;
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
-  }  
+.logo_recuperar{
+  display: flex;
+  margin: auto;
+  width:120px;
+  margin-bottom: 32px;
+}
+.contenedor_recuperar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 296px;
+  height: 50px;
+}
 .titulo_recuperar{
-    font-size: 28px;
-    text-align: center;
-    font-weight: bold;
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-  .boton_salir{
-    display: flex;
-    margin-top: 19px;
-    margin-left: 19px;
-    width: 40px;
-    height: 40px;
-  }
-  .enviar_recuperar{
-    margin-top: 247px;
-    margin-left: 0px;
-  }
-  .restablecer{
-    margin-top: 121px;
-    margin-right: 0px;
-    width: 160px;
-  }
-  .texto_restablecer{
-    font-size: 15px;
-    font-weight: bold;
-  }
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 32px;
+}
+.enviar_recuperar{
+  margin-top: 230px;
+  margin-left: 0px;
+}
+.boton_salir{
+  display: flex;
+  margin-top: 19px;
+  margin-left: 19px;
+  width: 40px;
+  height: 40px;
+  background-color: #FF8178;
+  border-radius: 50%;
+}
+.restablecer{
+  margin-top: 140px;
+  margin-right: 0px;
+  width: 160px;
+}
+.texto_restablecer{
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
 /*RECUPERAR CONTRASEÑA END*/
 
 /*PELICULA START*/
-  .contenedor_trailer{
-    display: flex;
-    width: 296px;
-    height: 232px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    border: 1px solid red;
-    justify-content: center;
-  }
-  .pelicula_fecha{
-    width:296px;
-    height:60px;
-    margin-top: 28px;
-    margin-left: 32px;
-    margin-right: 32px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 18px;
-    margin-bottom: 26px;
-  }
-  .fecha_contenedor{
-    display: flex;
-    width: 59px;
-    height: 59px;
-    background-color: palevioletred;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-  }
-  .texto_fecha{
-    font-size: 28px;
-  }
-  .calendario_icono{
-    width: 36px;
-    height: 36px;
-  }
+.contenedor_trailer{
+  display: flex;
+  width: 296px;
+  height: 232px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 52px;
+  border: 1px solid red;
+  justify-content: center;
+}
+.pelicula_fecha{
+  width:296px;
+  height:60px;
+  margin: auto;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 18px;
+}
+.fecha_contenedor{
+  display: flex;
+  width: 59px;
+  height: 59px;
+  background-color: #8E0505;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.texto_fecha{
+  font-size: 28px;
+}
+.calendario_icono{
+  width: 36px;
+  height: 36px;
+}
 /*PELICULA END*/
 
-
-/* styling search bar */
+/*Styling search bar */
 .search input[type=text]{
   width:300px;
   height:25px;
   border-radius:25px;
   border: none;
-}
-    
+} 
 .search{
   float:right;
   margin:7px;
-}
-    
+} 
 .search button{
-  color: #f2f2f2;
+  color: #ffffff;
   float: right;
   padding: 5px 10px;
   margin-right: 16px;
   font-size: 12px;
   border: none;
   cursor: pointer;
-} 
+}
