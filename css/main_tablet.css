@@ -60,7 +60,7 @@
 /* HOME START*/
 /* SCROLL STYLE*/
 #slideshow {
-  width: 744px;
+  width: 100%;
   height: 360px;
   border: 5px solid white;
 }
@@ -142,12 +142,12 @@
   height: 232px;
 }
 .titulo_peliculas{
-  font-size: 45px;
+  font-size: 42px;
   padding: 12px;
   padding-left: 15px;
 }
 .texto_peliculas{
-  font-size: 25px;
+  font-size: 30px;
   padding-left: 15px;
 }
 .texto_contenedor{
@@ -163,7 +163,7 @@
 }
 .logo_teatro{
   width: 130px;
-  height: 130px;
+  height: auto;
   margin-left: 66px;
   margin-right: 45px;
 }
@@ -349,9 +349,16 @@
 /*PELICULA START*/
 .contenedor_trailer{
   width: 612px;
-  height: 366px;
   margin-top: 48px;
-  margin-bottom: 90px;
+  margin-bottom: 48px;
+}
+.contenedor_pelicula_grande{
+  width: 612px;
+  height: auto;
+  background-color: #FF8178;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .pelicula_fecha{
   width: 611px;
@@ -366,8 +373,7 @@
   border-radius: 20px;
 }
 .texto_fecha{
-  font-size: 55px;
-  color: white;
+  font-size: 45px;
 }
 .calendario_icono{
   width: 80px;

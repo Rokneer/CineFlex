@@ -148,7 +148,7 @@ input[type=text],[type=password], select{
 /* SCROLL STYLE*/
 #slideshow {
   overflow: hidden;
-  width: 360px;
+  width: 100%;
   height: 220px;
   margin-bottom: 16px auto;
   border: 2px solid white;
@@ -161,24 +161,23 @@ input[type=text],[type=password], select{
   height: 220px;
   margin: auto;
   text-align: center;
+  background-color: black;
 }
 .slide a img{
   float: left;
-  width: 360px;
+  width: auto;
   height: 220px;
-  margin: auto;
+  margin: 80px;
+  margin-top: 0%;
+  margin-bottom: 0%;
   justify-content: center;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
 }
 .slide-wrapper {
-  /* Calculate the total width on the
-  basis of number of slides */
   width: calc(360px * 4);
-  /* Specify the animation with the
-  duration and speed */
   animation: slide 20s ease infinite;
 }
-/* Define the animation
-for the slideshow */
 @keyframes slide {
   20% {
     margin-left: 0px;
@@ -256,15 +255,12 @@ for the slideshow */
 }
 .poster{
   display: flex;
-  position: relative;
   justify-content: center;
   width:100px;
   height:120px;
-  margin:0 auto;
   background-color: #8E0505;
 }
 .poster a{
-  position: relative;
   display: flex;
   justify-content: center;
   width:auto;
@@ -300,9 +296,10 @@ for the slideshow */
 }
 .logo_teatro{
   width: 60px;
-  height: 60px;
+  height: auto;
   margin-left: 30px;
   margin-right: 25px;
+  border-radius: 50%;
 }
 .nombre_teatro{
   text-align: center;
@@ -578,12 +575,20 @@ for the slideshow */
 .contenedor_trailer{
   display: flex;
   width: 296px;
-  height: 232px;
   margin: auto;
   margin-top: 32px;
-  margin-bottom: 52px;
-  border: 1px solid red;
+  margin-bottom: 32px;
   justify-content: center;
+}
+.contenedor_pelicula_grande{
+  display: flex;
+  width: 296px;
+  height:fit-content;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  overflow: auto;
 }
 .pelicula_fecha{
   width:296px;
@@ -607,7 +612,9 @@ for the slideshow */
   border-radius: 20px;
 }
 .texto_fecha{
-  font-size: 28px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
 }
 .calendario_icono{
   width: 36px;
