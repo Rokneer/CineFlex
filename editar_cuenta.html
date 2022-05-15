@@ -4,11 +4,12 @@
       <meta charset="UTF-8">
       <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
       <link rel='stylesheet' type='text/css' media='screen and (min-width:744px)' href='css/main_tablet.css'>
+      <link rel='stylesheet' type='text/css' media='screen and (min-width:1440px)' href='css/main_escritorio.css'>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Editar Cuenta</title>
   </head>
   <body>
-    <section id="tamaño_mobile">
+    <section>
     <header>
       <nav class="banner">
         <div>
@@ -57,21 +58,23 @@
     </header>
       <section class="contenedor_subir_foto">
         <img class="imagen_usuario_mediana" src="imgs/usuario.png" alt = "Usuario">
-        <input class="subir_foto texto_opciones" id="item_5" type="button" value="Subir Foto">
+        <input class="subir_foto texto_opciones" type="button" value="Subir Foto">
       </section>
       <section class="contenedor_datos_cuenta">
         <form action="">
-          <label class="contenedor_lineas texto_formulario" for="email">
-            Email
-            <input type="text" id="email" name="email">
-          </label>
+          <div class="contenedor_lineas_doble">
+            <label class="contenedor_lineas texto_formulario lineas_cortas" for="email">
+              Email
+              <input type="text" id="email" name="email">
+            </label>
+            <br>
+            <label class="contenedor_lineas texto_formulario lineas_cortas" for="usuario">
+              Usuario
+              <input type="text" id="usuario" name="usuario">
+            </label>
+          </div>         
           <br>
-          <label class="contenedor_lineas texto_formulario" for="usuario">
-            Usuario
-            <input type="text" id="usuario" name="usuario">
-          </label>
-          <br>
-          <label class="contenedor_lineas texto_formulario" for="ubicacion">
+          <label class="contenedor_lineas texto_formulario lineas_largas" for="ubicacion">
             Ubicación
             <select name="lugares" id="lugares">
               <option value="empty"></option>
@@ -81,16 +84,18 @@
               <option value="barranquilla">Barranquilla</option>
             </select>
           </label>
-          <br>    
-          <label class="contenedor_lineas texto_formulario" for="contraseña">
-            Contraseña
-            <input type="password" id="contraseña" name="contraseña">
-          </label>
           <br>
-          <label class="contenedor_lineas texto_formulario" for="confirmar contraseña">
-            Confirmar Contraseña
-            <input type="password" id="confirmar" name="confirmar">
-          </label>
+          <div class="contenedor_lineas_doble">
+            <label class="contenedor_lineas texto_formulario lineas_cortas" for="contraseña">
+              Contraseña
+              <input type="password" id="contraseña" name="contraseña">
+            </label>
+            <br>
+            <label class="contenedor_lineas texto_formulario lineas_cortas" for="confirmar contraseña">
+              Confirmar Contraseña
+              <input type="password" id="confirmar" name="confirmar">
+            </label>
+          </div>           
           <br>
           <a href="cuenta.html" class="confirmar_boton texto_opciones">Confirmar</a>
       </section>

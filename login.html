@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
         <link rel='stylesheet' type='text/css' media='screen and (min-width:744px)' href='css/main_tablet.css'>
+        <link rel='stylesheet' type='text/css' media='screen and (min-width:1440px)' href='css/main_escritorio.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
     </head>
     <body>
-        <section id="tamaño_mobile">
+        <section>
             <img class="logo_login" src="imgs/logo_small.png" alt ="logo">
-            <div class="bienvenido bienvenido_contenedor" id="texto_2">Bienvenido</div>
+            <div class="bienvenido bienvenido_contenedor">Bienvenido</div>
             <br>
             <section  class="contenedor_datos_login">
                 <form action="">
@@ -24,8 +25,10 @@
                         <input type="password" id="contraseña" name="contraseña">
                     </label>
                     <a class="olvidate_contraseña" href="recuperar_contraseña.html">¿Olvidaste la contraseña?</a>
-                    <a href="home.html"><input class="enviar" type="button" value="Enviar"></a>
-                    <a class="crear_cuenta" href="registro.html">Crear cuenta</a>
+                    <div class="contenedor_botones_login">
+                        <a href="home.html"><input class="enviar" type="button" value="Enviar"></a>
+                        <a href="registro.html"><input class="crear_cuenta" type="button" value="Crear cuenta"></a>
+                    </div>
                 </form>
             </section>
         </section>

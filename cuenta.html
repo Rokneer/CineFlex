@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
         <link rel='stylesheet' type='text/css' media='screen and (min-width:744px)' href='css/main_tablet.css'>
+        <link rel='stylesheet' type='text/css' media='screen and (min-width:1440px)' href='css/main_escritorio.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cuenta</title>
     </head>
   <body>
-    <section id="tamaño_mobile">  
+    <section>  
       <header>
         <nav class="banner">
           <div>
@@ -16,7 +17,7 @@
             <label class="side_panel" for="hamburger"><img src="imgs/menu.png" class="hamburger"></label>
             <div class="SP_container">
               <div>
-                <div class="contenedor_logo_SP" id="barra_3">
+                <div class="contenedor_logo_SP">
                   <img class="logo_SP" src="imgs/logo_small_icon_only.png" alt="logo">
                 </div>
                 <div class="opciones_SP">
@@ -42,7 +43,7 @@
                       <a class="opciones_SP_texto" id="texto" href="index.html">Salir</a> 
                   </div>   
                 </div>
-                <div class="footer_SP" id="barra_3"></div>               
+                <div class="footer_SP"></div>               
               </div>
             </div>
             <div class="dim_background"></div>
@@ -55,14 +56,16 @@
           </div>
         </nav>
       </header>
-      <section>
+      <section class="contenedor_imagen_nombre">
         <img class="imagen_usuario" src="imgs/usuario.png"alt="Usuario">
-        <div class="nombre_usuario">Juan Ochoa</div>
-        <form action="">
-          <a href="editar_cuenta.html" class="editar_boton texto_opciones">Editar</a>
-          <br>
-          <a href="login.html" class="salir_boton texto_opciones">Salir</a>
-        </form>
+        <div>
+          <div class="nombre_usuario">Juan Ochoa</div>
+          <form action="">
+            <a href="editar_cuenta.html" class="editar_boton texto_opciones">Editar</a>
+            <br>
+            <a href="login.html" class="salir_boton texto_opciones">Salir</a>
+          </form>
+        </div>       
       </section>
     </section>
   </body>

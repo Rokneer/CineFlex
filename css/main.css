@@ -1,26 +1,26 @@
+body{
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-width: none;
+  font-family: sans-serif;
+  background-color: #FFDFDD; /*FONDO GENERAL*/
+}
 input[type=text],[type=password], select{
   width: 100%;
   padding: 16px 10px;
   border: none;
   background-color: #ffffff;
 }
-/* MOBILE GENERAL START*/
-#tamaño_mobile{
-  position: relative;
-  height:640px;
-  margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  font-family: sans-serif;
-  background-color: #FFDFDD; /*FONDO GENERAL*/
+option{
+  font-size: larger;
 }
 /* BANNER STYLE*/
 .banner{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: right;
   width: 100%;
   height: 50px;
   background-color: #8E0505; /*FONDO BANNER*/
@@ -32,7 +32,7 @@ input[type=text],[type=password], select{
 .item_banner a{
   position: relative;
   display: flex;
-  width:40px;
+  width: 40px;
   height: 40px;
   margin: 0 30px;
 }
@@ -58,10 +58,10 @@ input[type=text],[type=password], select{
   top: 0;
   left: -50%;
   position: absolute;
-  display: flex;
   justify-content: center;
   transition: left 0.4s;
   z-index: 2;
+  overflow-y: hidden;
 }
 .checkbox:checked ~ .SP_container{
   left: 0;
@@ -73,8 +73,6 @@ input[type=text],[type=password], select{
   top: 0;
   left: -100%;
   position: absolute;
-  display: flex;
-  justify-content: center;
   transition: left 0.3s;
   z-index: 1;
 }
@@ -95,9 +93,8 @@ input[type=text],[type=password], select{
 }
 .contenedor_logo_SP{
   display: flex;
-  width:auto;
+  width:100%;
   height: 58px;
-  margin: auto;
   border-bottom: solid white 4px;
 }
 .opciones_SP{
@@ -110,18 +107,17 @@ input[type=text],[type=password], select{
   margin-bottom: 20px;
 }
 .contenedor_opciones_SP{
-  width: auto;
   text-align: center;
 }
 .opciones_SP_texto{
   font-size: 25px;
   font-weight: bolder;
   text-decoration: none;
+  text-align: center;
   color: white;
 }
 .footer_SP{
-  width:auto;
-  height: 46px;
+  height: 50px;
   border-top: solid white 4px;
 }
 /*SIDE PANEL END*/
@@ -221,6 +217,7 @@ input[type=text],[type=password], select{
 }
 .item_categoria{
   text-align:center;
+  justify-content: center;
   height:auto;
   width:auto;
   line-height:6px; 
@@ -356,13 +353,12 @@ input[type=text],[type=password], select{
   display: flex;
   align-items: center;
   width: 296px;
-  height: 126px;
+  height: auto;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 17px;
 }
 .imagen_usuario_mediana{
-  display: flex;
   width: 126px;
   height: 126px;
   margin-right: 20px;
@@ -370,7 +366,6 @@ input[type=text],[type=password], select{
   border-radius: 50%;
 }
 .subir_foto{
-  display: flex;
   border: none;
   text-align: center;
   text-decoration: none;
@@ -402,7 +397,6 @@ input[type=text],[type=password], select{
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-left: 2%;
   width: 140px;
   height: 50px;
   border-radius: 20px;
@@ -451,25 +445,32 @@ input[type=text],[type=password], select{
   margin-top: 5px;
   margin-bottom: 35px;
 }
+.contenedor_botones{
+  width: auto;
+  height: auto;
+}
 .enviar{
   display: flex;
   border: none;
-  color: white;
   text-decoration: none;
-  margin: auto;
-  margin-bottom: 60px;
+  margin: 30px auto;
   width: 116px;
   height: 54px;
   font-size: 24px;
   cursor: pointer;
+  color: white;
   background-color: #FF8178;
 }
 .crear_cuenta{
   display: flex;
+  border: none;
+  pointer-events: none;
+  margin: auto;
   text-decoration: none;
   font-size: 20px;
   color: black;
-  justify-content: center;
+  padding: 0;
+  background-color: #ffffff00;
 }
 /*LOGIN END*/
 
@@ -507,10 +508,9 @@ input[type=text],[type=password], select{
   justify-content: center;
 }
 .botones_registro{
-  display: flex;
   border: none;
   color: white;
-  width: 120px;
+  width: 116px;
   height: 40px;
   font-size: 24px;
   cursor: pointer;
@@ -561,7 +561,6 @@ input[type=text],[type=password], select{
 }
 .restablecer{
   margin-top: 140px;
-  margin-right: 0px;
   width: 160px;
 }
 .texto_restablecer{
