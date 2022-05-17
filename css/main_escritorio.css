@@ -21,6 +21,9 @@
   width: 40%;
   left: -40%;
 }
+.dim_background{
+  height: 135%;
+}
 .checkbox:checked ~ .SP_container{
   left: 0;
 }
@@ -61,34 +64,36 @@
 
 /* HOME START*/
 /* SCROLL STYLE*/
-#slideshow {
+#slideshow{
   width: 100%;
-  height: 360px;
-  border: 5px solid white;
+  padding: 30px 90px;
 }
-.slide {
-  height: 360px;
+#slideshow > ul.slider{
+  width: 100%;
+  height: 405px;
 }
-.slide a img{
-  width: 744px;
-  height: 360px;
+#slideshow > ul.slider li img{
+  width: 100%;
+  height: 405px;
+  border: 5px solid #8E0505;
 }
-.slide-wrapper {
-  width: calc(744px * 4);
+#slideshow > .menu{
+  text-align: center;
+  margin: 30px;
+  margin-bottom: 10px;
 }
-@keyframes slide {
-  20% {
-    margin-left: 0px;
-  }
-  40% {
-    margin-left: calc(-744px * 1);
-  }   
-  60% {
-    margin-left: calc(-744px * 2);
-  }   
-  80% {
-    margin-left: calc(-744px * 3);
-  }
+#slideshow > .menu li a{
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #8E0505;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  font-size: 55px;
+  border-radius: 100%;
+  margin: auto 40px;
+  border: 5px solid #ffffff;
 }
 /* MOVIE OPTIONS STYLE*/
 .pelicula_categoria{

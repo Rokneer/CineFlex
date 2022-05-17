@@ -17,7 +17,7 @@
                         <label class="side_panel" for="hamburger"><img src="imgs/menu.png" class="hamburger"></label>
                         <div class="SP_container">
                         <div>
-                            <div class="contenedor_logo_SP" id="barra_3">
+                            <div class="contenedor_logo_SP">
                             <img class="logo_SP" src="imgs/logo_small_icon_only.png" alt="logo">
                             </div>
                             <div class="opciones_SP">
@@ -43,7 +43,7 @@
                                 <a class="opciones_SP_texto" id="texto" href="index.html">Salir</a> 
                             </div>   
                             </div>
-                            <div class="footer_SP" id="barra_3"></div>               
+                            <div class="footer_SP" ></div>               
                         </div>
                         </div>
                         <div class="dim_background"></div>
@@ -58,19 +58,36 @@
                 </nav>
             </header>
 
-            <!-- search bar right align -->
-            <div class="search">
-                <form action="#">
-                    <input type="text"
-                        placeholder=" Buscar Peliculas"
-                        name="search">
-                    <button>
-                        <i class="fa fa-search"
-                            style="font-size: 18px;">
-                        </i>
-                    </button>
-                </form>
-            </div>          
+            <div id="kiko-slider">
+  
+                <ul class="slider">
+                  <li id="slide1">
+                    <h1>Hola Programadores</h1>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/car.jpg"/>
+                  </li>
+                  <li id="slide2">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/sunset.jpg"/>
+                  </li>
+                  <li id="slide3">
+                    <h1>Ejemplo con otros elementos</h1>
+                    <p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de elementos en el slider</p>
+                    <a href="https://kikopalomares.com/">¡Corre a mi web para más contenido!</a>
+                  </li>
+                </ul>
+                
+                <ul class="menu">
+                  <li>
+                    <a href="#slide1">1</a>
+                  </li>
+                  <li>
+                    <a href="#slide2">2</a>
+                  </li>
+                   <li>
+                    <a href="#slide3">3</a>
+                  </li>
+                </ul>
+                
+              </div>   
         </section>
     </body>
 </html>
